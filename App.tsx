@@ -10,6 +10,16 @@ export default function App() {
   );
 }
 
+export default function App() {
+  return (
+    <NativeBaseProvider>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </NativeBaseProvider>
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
